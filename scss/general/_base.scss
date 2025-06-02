@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "nunito";
+    src: url(../font/Nunito-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "nunitoblack";
+    src: url(../font/Nunito-Black.ttf);
+}
+@font-face {
+    font-family: "nunitomedio";
+    src: url(../font/Nunito-Medium.ttf);
+    font-weight: 100
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html { 
+    height: 100%;
+}
+
+body {
+    margin: 1;       
+    padding: 0;      
+    min-height: 100%; 
+    display: block;  
+}
+
+.contenedor-pagina {
+    display: flex;             
+    flex-direction: column;    
+    min-height: 100vh;         
+}
+
+main {
+    flex: 1; 
+    margin-top: 50px;
+}
+
+main.main-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex: 1;
+  overflow: hidden;
+  margin-top: 0;
+  // la pongo aca porque necesito que excepcionalente no haya margin top en el index//
+}
+
+a {
+    display: inline;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+ul {
+    list-style: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+li {
+    text-decoration: none;
+    margin-left: 35px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+label {
+    display: block;
+    margin: 5px;
+}
+
+@mixin flex-config($justify: flex-start, $align: stretch, $direction: row, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}

@@ -1,0 +1,12 @@
+
+html, body {
+    font-family: $fuente-nunito; 
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+a {
+    font-family: $fuente-nunito-medium; 
+    text-decoration: none; 
+    color: $color-principal; 
+}

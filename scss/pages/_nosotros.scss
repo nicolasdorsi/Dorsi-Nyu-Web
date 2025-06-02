@@ -1,0 +1,70 @@
+.main-nosotros {
+    @include flex-config($justify: space-around); 
+    flex: 1; 
+    padding: 20px; 
+
+    .ficha {
+        @include flex-config($direction: column, $align: center); 
+        gap: 20px;
+        max-width: 800px; 
+        width: 100%; 
+        padding: 15px; 
+        box-sizing: border-box; 
+    }
+
+    .columna {
+        @include flex-config($direction: column, $align: center);
+        flex-shrink: 0; 
+        width: 250px;
+        text-align: center;
+    }
+
+    .personal {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover; 
+    }
+
+    .nombres {
+        margin-top: 10px;
+        font-family: "nunitomedio", sans-serif; 
+        font-size: 1.2em;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .epigrafe {
+        max-width: 600px; 
+        width: 100%;
+        text-align: justify; 
+        line-height: 1.6; 
+        font-family: "nunito", sans-serif; 
+        margin: 0; 
+        box-sizing: border-box;
+    }
+
+    @media (max-width: $breakpoint-movil) { 
+        @include flex-config($direction: column, $align: center);
+        gap: 30px; 
+        .ficha {
+            gap: 15px;
+            max-width: 90%; 
+            padding: 10px;
+        }
+
+        .columna {
+            width: 120px; 
+        }
+
+        .nombres {
+            font-size: 1.2em; 
+        }
+
+        .epigrafe {
+            text-align: center; 
+            font-size: 0.9em; 
+            max-width: 100%;
+            padding: 0 5px;
+        }
+    }
+}

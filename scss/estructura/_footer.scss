@@ -1,0 +1,17 @@
+footer {
+    font-family: $fuente-nunito;
+    font-size: 5px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 15px;
+    padding: 10px;
+    @include flex-config(space-between, flex-end); 
+    
+    .rrss {
+        height: 25px;
+        width: 25px;
+        margin-top: 0px;
+        margin-bottom: 1px;
+        margin-left: 2px;
+    }
+}

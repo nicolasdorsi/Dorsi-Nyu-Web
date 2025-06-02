@@ -1,0 +1,23 @@
+header {
+    @include flex-config(space-between, center); 
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 50px;
+    border-bottom: 1px solid $color-secundario;
+    text-decoration: none;
+    color: inherit;
+    color: $color-principal;
+
+    nav.nav-menu {
+        ul {
+           @include flex-config(flex-end);
+            li {
+                &.gris { 
+                    font-family: $fuente-nunito-medium; 
+                    list-style: disc; 
+                    display: list-item; 
+                }
+            }
+        }
+    }
+}
